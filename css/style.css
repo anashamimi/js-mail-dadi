@@ -5,3 +5,26 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --bg-color : #012340;
+    --bg-input: #025939;
+    --dark-green: #027333;
+    --green: #03A63C;
+    --contrast-color: #04D939;
+}
+
+
+body{
+    background-color: var(--bg-color);
+    color: var(--contrast-color);
+}
+
+.ah-card{
+    border: 5px solid var(--green);    
+}
+
+.ah-border{
+    border: 1px solid var(--bg-input);
+    width: 40%;
+}
