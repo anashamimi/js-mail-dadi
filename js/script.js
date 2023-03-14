@@ -67,11 +67,11 @@ btnDado.addEventListener('click', function playdice(e) {
     }
     console.log(esito);
 
-    document.getElementById('dadi-computer').innerHTML += `<div class="num-dadi d-flex align-items-center justify-content-center">${numDadoComputer1}</div>
+    document.getElementById('dadi-computer').innerHTML = `<div class="num-dadi d-flex align-items-center justify-content-center">${numDadoComputer1}</div>
     <div class="num-dadi d-flex align-items-center justify-content-center">${numDadoComputer2}</div>`;
 
-    document.getElementById('dadi-user').innerHTML += `<div class="num-dadi d-flex align-items-center justify-content-center">${numDadoUser1}</div>
+    document.getElementById('dadi-user').innerHTML = `<div class="num-dadi d-flex align-items-center justify-content-center">${numDadoUser1}</div>
     <div class="num-dadi d-flex align-items-center justify-content-center">${numDadoUser2}</div>`;
 
-    document.getElementById('dadi').innerHTML += `<p class="text-center text-warning p-5">${esito}</p>`;
+    document.getElementById('messaggio').innerHTML = `<p class="text-center text-warning p-5">${esito}</p>`;
 });
