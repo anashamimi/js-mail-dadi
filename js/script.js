@@ -28,11 +28,11 @@ btnMail.addEventListener('click', function checklist(e) {
 
     if (accesso) {
         accesso = 'Benvenuto!!!'
-        document.getElementById('app').innerHTML += `<p>${accesso}</p>`;
+        document.getElementById('messaggio').innerHTML = `<p>${accesso}</p>`;
         console.log(accesso);
     } else {
         accesso = 'Non sei nella lista!!!'
-        document.getElementById('app').innerHTML += `<p class="text-danger">${accesso}</p>`;
+        document.getElementById('messaggio').innerHTML = `<p class="text-danger">${accesso}</p>`;
         console.log(accesso);
     }
 });
@@ -73,5 +73,5 @@ btnDado.addEventListener('click', function playdice(e) {
     document.getElementById('dadi-user').innerHTML = `<div class="num-dadi d-flex align-items-center justify-content-center">${numDadoUser1}</div>
     <div class="num-dadi d-flex align-items-center justify-content-center">${numDadoUser2}</div>`;
 
-    document.getElementById('messaggio').innerHTML = `<p class="text-center text-warning p-5">${esito}</p>`;
+    document.getElementById('messaggio-dadi').innerHTML = `<p class="text-center text-warning p-5">${esito}</p>`;
 });
